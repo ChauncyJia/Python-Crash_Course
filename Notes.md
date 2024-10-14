@@ -48,3 +48,28 @@
   - list.reverse()
 - 列表长度
   - len(list)
+# Chapter 4
+-for循环
+  - for car in cats:
+  - for dog in dogs:
+  - for item in list_of_items:
+- range()创建数值列表
+  - for value in range(1, 5):
+- 创建数字列表
+  - list(range(1,6))创建数字列表[1,2,3,4,5]
+  - list(range(2,11,2)) 步长为2
+- 列表统计
+  - min(list)  最小值
+  - max(list)  最大值
+  - sum(list)  和
+- 列表解析
+  - squares = [value **2 for value in range(1, 11)]
+- 列表切片
+  - list[start_index,end_index] end_index不显示
+  - list[:3]前3个
+  - list[-3:]后3个
+  - list[:] 复制
+- 元组
+  - 不能修改的列表叫元组
+  - tuples = (200, 50)
+  - 如需修改请直接赋值修改
