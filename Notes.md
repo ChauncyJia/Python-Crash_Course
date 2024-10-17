@@ -108,3 +108,23 @@
     - for value in dict.values()值
     - for key in sorted(dict.keys()) 按顺序
     - for value in set(dict.values()) 不重复
+# Chapter 7
+  - 输入
+    - input("xxx:")
+    - int()字符串转换为数字
+    - %是个很有用的工具，它将两个数相除并返回余数
+    - print(4 % 3) print(7 % 3) 
+  - while
+    - while xxx <= number :运行几次
+    - 标志位
+      - active = True
+      - whiel active: 
+    - break 退出
+    - continue 跳过后续循环，返回循环开头
+    - while list: 当list.pop()变为空时为假
+    - 列表删除所有特定值
+      ```
+      while 'val' in list:
+          list.remove('val')
+      ```
+    - 
