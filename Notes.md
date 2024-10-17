@@ -91,3 +91,20 @@
   - or  或
   - in 包含
   - not in 不包含在列表
+# Chapter 6
+  - 字典
+    - 字典是一列的的键值对
+    - dict = {'key1':'value1",'key2':'value2'}
+    - 修改键值对：dict['key3'] = 'value'
+    - 删除键值对：del dict['key4']
+    - get()用法value = dict.get('key1','No key1 value assigned.')
+  - 字典方法
+    - dict.items() 字典的键值对列表
+    - dict.keys() 字典键列表
+    - dict.values() 字典值列表
+  - 遍历字典
+    - for key, value in dict.items(): 键值对
+    - for key in dict.keys() 键
+    - for value in dict.values()值
+    - for key in sorted(dict.keys()) 按顺序
+    - for value in set(dict.values()) 不重复
