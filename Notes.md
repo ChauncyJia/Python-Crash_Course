@@ -143,3 +143,49 @@
 - 函数与字典
   - def func(形参1，**形参2) #形参2为一个空字典
   - func(实参1，实参2，实参3) #实参2，3添加到字典
+# Chapter 9
+- 类
+  ```
+  class Dog:
+      """描述类"""
+      def __init__(self,形参1，形参2)：
+            """初始化形参"""
+            self.xxx = 形参1
+            self.xxx = 形参2
+            self.xxx = 0 
+      def func_xxx(self):
+            """定义其他方法"""
+            self.xxx
+  my_dog = Dog(实参1，实参2)   #调用类
+  ```
+- 类名应采用驼峰命名法 ，即将类名中的每个单词的首字母都大写，而不使用下划
+线。实例名和模块名都采用小写格式，并在单词之间加上下划线。
+# Chapter 10
+- 文件
+  - 读取文件
+    - with open(file_path) as file_object:
+    - contents = file_object.read()
+  - 读取每列
+    - for line in file_object:
+    -        print(line.rstrip())
+  - 读取列方法
+    - lines = file_object.readline
+  - 替换
+    - xxx.replace('old','new')
+  - 写入文件
+    - with open(file_path,'w') as file_object: #如果文件存在会直接替换为空的再写入
+    -      file_object.write("xxx")
+  - 附加文件
+    - with open(file_path,'a') as file_object:
+    - file_object.write("xxx")
+  - 异常
+    - try-except
+    - try-except-else
+    - xxx.split() 会将字符串xxx以空格为分隔符拆分成一个列表
+  - pass表示 python什么都不做
+  - JSON写入
+    - with open(file_path,'w) as f:
+    -     json.dump(xxxxxx,f)
+  - JSON读取
+    - with open(file_path) as f
+    -     xxxx=json.load(f)

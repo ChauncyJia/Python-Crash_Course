@@ -54,4 +54,31 @@ your_res.describe_restaurant()
 
 your_res.open_restaurant()
     
-        
+# 练习9-3：用户 　创建一个名为User 的类，其中包含属性first_name 和
+# last_name ，以及用户简介通常会存储的其他几个属性。在类User 中定义一个名为
+# describe_user() 的方法，用于打印用户信息摘要。再定义一个名为
+# greet_user() 的方法，用于向用户发出个性化的问候。
+# 创建多个表示不同用户的实例，并对每个实例调用上述两个方法。
+
+class User:
+    """用户属性的类"""
+    def __init__(self,first_name,last_name):
+        """参数初始化"""
+        self.first_name = first_name
+        self.last_name = last_name
+    
+    def describe_user(self):
+        """描述用户信息"""
+        full_name =f"{self.first_name} {self.last_name}"
+        print(full_name.title())
+    def greet_user(self):
+        """欢迎用户"""
+        print(f"hello {self.first_name} {self.last_name},welcome!")
+
+jia = User('jia','xiangsheng')
+zheng = User('zheng','qiulei')
+jia.describe_user()
+zheng.describe_user()
+jia.greet_user()
+zheng.greet_user()
+      
